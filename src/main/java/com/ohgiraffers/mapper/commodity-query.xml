@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment/>
+    <entry key="selectAllCommodity">
+        SELECT
+        *
+        FROM COMMODITY
+    </entry>
+
+    <entry key="insertCommodity">
+        INSERT INTO COMMODITY
+        (
+        COMMODITY_CODE
+        , COMMODITY_TITLE
+        , COMMODITY_TYPE
+        , SALE_DATE
+        , SALE_PRICE
+        )
+        VALUES
+        (
+        ?
+        , ?
+        , ?
+        , ?
+        , ?
+        )
+    </entry>
+
+    <entry key="updateCommodity">
+        UPDATE COMMODITY
+        SET COMMODITY_TITLE = ?
+        , SALE_PRICE = ?
+        WHERE COMMODITY_CODE = ?
+    </entry>
+
+
+</properties>
